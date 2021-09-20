@@ -86,7 +86,7 @@ li{
 	flex-direction: column;
 	align-items: flex-end;
 }
-#add_task{
+#add_task, #add_task2{
 	border: 3px solid;
 }
 #add_task_div{

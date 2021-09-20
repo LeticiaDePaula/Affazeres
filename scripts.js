@@ -77,6 +77,7 @@ const verifyDatabase = () => {
 
 var database = verifyDatabase();
 document.getElementById('add_task').addEventListener('click', addTask);
+document.getElementById('add_task2').addEventListener('click', addTask);
 document.getElementById('main_input').addEventListener('keypress', addTaskEnter);
 document.getElementById('main_ul').addEventListener('click', clickTask);
 refresh();
