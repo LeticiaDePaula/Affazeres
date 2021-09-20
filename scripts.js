@@ -1,15 +1,23 @@
 const addTask = () => {
 	let userInput = document.getElementById('main_input').value;
-	database.push ({'task': userInput, 'status': ''})
-	document.getElementById('main_input').value = '';
-	refresh();
+	if (userInput === ''){
+		alert('Insira um valor antes de adicionar!');		
+	}else{
+		database.push ({'task': userInput, 'status': ''});
+		document.getElementById('main_input').value = '';
+		refresh();
+	}
 }
 const addTaskEnter = (event) => {
 	if (event.key === 'Enter'){
 		let userInput = event.target.value;
+		if (userInput === ''){
+			alert('Insira um valor antes de adicionar!')
+		}else{
 		database.push ({'task': userInput, 'status': ''})
 		event.target.value = '';
 		refresh();
+		}
 	}
 }
 const clickTask = (event) => {
