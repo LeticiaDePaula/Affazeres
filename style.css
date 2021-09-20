@@ -1,0 +1,108 @@
+html, body, div, h1, h3, p, img, ul, li, label, header{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+body, #main_input{
+	font-family: 'Architects Daughter', cursive;	
+}
+body{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap-reverse;
+	line-height: 1;
+	background-image: url("https://previews.123rf.com/images/daicokuebisu/daicokuebisu2001/daicokuebisu200100071/138766547-cute-and-simple-cat-seamless-pattern-.jpg");
+}
+header{
+	padding: 3%;
+	margin: 1.5%;
+	background-color: black;
+	color: white;
+	border-radius: 47%;
+}
+h1{
+	font-size: 150px;
+}
+h3{
+	padding: 1.5%;
+	background-color: white;
+	border: 3px solid;
+	border-radius: 11%;
+	text-align: center;
+	font-size: 120%;
+}
+h4{
+	padding: 0.5%;
+	background-color: white;
+	border: 2px solid;
+	border-radius: 11%;
+	text-align: center;
+	font-size: 100%;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	width: 800px;
+	margin: 1%;
+	padding: 3%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: black;
+	border-radius: 47%;
+	border: 1px solid black;
+	text-align: center;
+	color: white;
+	font-size: 110%;
+}
+#main_div{
+	width: 47%;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#by{
+	margin-right: 5%;
+	float: right;
+}
+#list_div{
+	display: flex;
+	margin: 3%;
+}
+#main_input{
+	width: 520px;
+	text-align: center;
+	font-size: 105%;
+	border: 3px solid;
+}
+#main_ul{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+#add_task{
+	border: 3px solid;
+}
+#add_task_div{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+.new_task > input[type='checkbox']:checked  + div {
+	text-decoration:line-through;
+}
+.task_text{
+	text-align: center;
+}
+.new_task > input[type='checkbox'], .new_task > input[type='button']{
+	margin: 1%;
+}
+.new_task > input[type='button']{
+	border-radius: 50%;	
+}
