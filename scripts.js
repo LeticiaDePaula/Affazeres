@@ -62,6 +62,11 @@ const createTask = (task, status, key) => {
 	newLi.classList.add('new_task');
 	newLi.innerHTML = '<input type="checkbox"' + status + ' data-key=' + key + '><div class="task_text">' + task + '</div><input type="button" value="&#x274C" data-key=' + key + '>';
 	document.getElementById('main_ul').appendChild(newLi);
+	if (status === "checked"){
+		newLi.style.backgroundColor = 'rgb(160, 160, 160)';
+	}else{
+		newLi.style.backgroundColor = 'black';
+	}
 }
 
 const verifyDatabase = () => {
